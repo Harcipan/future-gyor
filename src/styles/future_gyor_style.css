@@ -1,0 +1,8 @@
+.future-gyor-img{
+    width: 1000px;
+    transition: all 1s ease;
+}
+
+.future-gyor-img:hover{
+    transform: scale(1.01);
+}
