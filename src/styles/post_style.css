@@ -17,12 +17,7 @@
     border-radius: 20px;
     margin: 20px;
     padding: 30px;
-    justify-content: space-evenly;
-    transition: all 1s ease;
-}
-
-.post:hover{
-    transform: scale(1.01);
+    justify-content: space-between;
 }
 
 .post-cont{
@@ -35,6 +30,7 @@
 .post-title, .post-text{
     color:#FBEEC1;
     padding: 10px;
+    text-align: left;
 }
 
 img{

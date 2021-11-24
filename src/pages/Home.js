@@ -6,18 +6,17 @@ import '../styles/future_gyor_style.css'
 import gyorlogo from '../images/CzuczorLogo.png'
 import kep from '../images/testkep.jpg'
 
-function Home() {
-  const post = [{title:"PR Cikk", szoveg:"valami valami valami"},{title:"Cím", szoveg:"szoveg, szovegeeee"},];
+function Home(props) {
   return (
     <div style={{textAlign:"center"}}>
-      <div><img src={gyorlogo} alt="testkep" style={{width:"500px"}}/></div>
-      <h1>Posts</h1>
+      <div><img src={gyorlogo} alt="testkep" className={props.toggle ? "" : "future-gyor-img small"}/></div>
+      <div className="cím">Posts</div>
       <div className="postok">
-        {post.map((post)=>(
-          <Post title={post.title} szoveg={post.szoveg}/>))}
+        {props.post.map((post)=>(
+          <Post key={post.title.toString()} title={post.title} szoveg={post.szoveg}/>))}
       </div>
 
-      <h1>Győr 2121</h1>
+      <div className="cím">Győr 2121</div>
       <div><img src={kep} alt="testkep" className="future-gyor-img"/></div>
       <div><img src={kep} alt="testkep" className="future-gyor-img"/></div>
     </div>

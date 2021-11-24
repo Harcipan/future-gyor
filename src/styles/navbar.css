@@ -14,7 +14,7 @@ body{margin:0px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sa
 	font-size: 20px;
 	background-color: #BC986A;
 	position: relative;
-	top:-452px;
+	top:-454px;
 	transition: all 1s ease;
 	position: absolute;
 	width: 100%;
@@ -35,12 +35,15 @@ body{margin:0px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sa
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	color:#FBEEC1;
+	fill: #FBEEC1;
 }
 
-.nav-link:any-link{
+.nav-link{
 	color:#FBEEC1;
 	padding:0px 20px;
 	font-size: 24px;
+	cursor: pointer;
 }
 
 .nav-link:hover{
@@ -124,6 +127,7 @@ i:hover{
 	transition: transform 1s ease, opacity 0.5s ease;
 	transform-origin:left;
 }
+
 .fdc{flex-direction: column;}
 .fdr{flex-direction: row;}
 .pfwlt{font-family: against; font-size:50px !important;}
