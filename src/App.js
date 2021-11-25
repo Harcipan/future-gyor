@@ -5,6 +5,7 @@ import './styles/navbar.css'
 import './styles/footer_style.css'
 import Home from './pages/Home'
 import CGBGL from './images/CzuczorLogo.png'
+import testkep from './images/CzuczorLogoOG.png'
 
 function App() {
   const [toggle,setToggle]=useState(false);
@@ -46,7 +47,7 @@ function App() {
       setTt2('Alius negotium');
     }
   }
-  const post = [{title:tt1, szoveg:sz1},{title:tt2, szoveg:sz2},];
+  const post = [{title:tt1, szoveg:sz1, kep:testkep},{title:tt2, szoveg:sz2, kep:CGBGL},];
   return (
     <Router>
       {/*navbar*/}

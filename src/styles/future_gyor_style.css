@@ -34,8 +34,8 @@
         width: 400px;
         padding: 0;
     }
-    .post-cont, .post-image{
-        width: 0;
+    .post{
+        flex-direction: column;
     }
   }
   @media screen and (max-width: 400px){
