@@ -15,39 +15,90 @@ function App() {
   const [tt1, setTt1]=useState("PR Cikk")
   const [tt2, setTt2]=useState("Egy másik feladat")
 
+  const [fgyt1, setFgyt1]=useState("Magyar árú")
+  const [fgyt2, setFgyt2]=useState("Kimérős boltok")
+  const [fgyt3, setFgyt3]=useState("Zöld belváros")
+  const [fgyt4, setFgyt4]=useState("Közlekedés")
+  const [fgys1, setFgys1]=useState("Győr városa külön szerződésben áll a város határain belül üzemelő multinacionális üzletekkel, melyben kikötötték, hogy a lehetőségekhez mérten  törekedjenek a magyar árucikkek forgalmazására,mint például zöldségek, gyümölcsök, kifejezetten a magyar narancs, ruhacikkek és egyéb termékek. Az áruházak polcaira így nem a még zölden leszedett, kamionban érlelt zöldségek, gyümölcsök, a világ túlfelén előállított tömegcikkek kerülnek, hanem helyettük a magyar munkások által előállított készítmények, melyekkel az ország iparát erősítjük.")
+  const [fgys2, setFgys2]=useState("A városban az ömlesztett áruk már csak olyan boltokban kaphatók, ahol a magunk vitte edényekbe tudjuk tölteni a kívánt cikket és annak az árát a mennyiségre kivetítve megkapjuk, így csak a termékért kell fizetni, a csomagolásért nem, így az egységekre vetített ár olcsóbb lehet. A város lakói továbbá nem terhelik a környezetüket a plusz csomagolóanyagokkal.")
+  const [fgys3, setFgys3]=useState("Az elmúlt időszakban a fejlesztések lehetővé tették, hogy a belváros egyre zöldüljön, teret kapjon a fák, parkos területek mellett egy fejlett, egységes kerékpárút hálózat.")
+  const [fgys4, setFgys4]=useState("A városi forgalmat a technikai innovációknak köszönhetően a föld alá vezethettük 2x2 sávon, egy külön mentősávval arra az esetre, ha netán gond adódna a város alatt. A városban csak a Volánbusz járatai és a közfeladatot ellátó szervek járművei közlekedhetnek, valamint az alternatív közlekedési eszközökkel, mint kerékpár, roller, Segway, bárki igénybe veheti a város kerékpárút hálózatát. Ezt ösztönzik a város határain felépített több ezer férőhelyes parkolóházak hálózata, amikhez vásárolható bérlet tartalmazza a városi közlekedési bérletet is.")
+
   function changeLang(n){
     if (n===1){
       setSz1("Ez van a pr cikkben, nagyon szép és okos");
       setSz2("Ez egy másik szöveg");
       setTt1("PR Cikk");
       setTt2("Egy másik feladat");
+
+
     }
     else if(n===2) {
       setSz1('This is the pr article, very nice and smart');
       setSz2('This is another text');
       setTt1('Article PR');
-      setTt2('masik valami legyszi mukodj');
+      setTt2('This is another text');
+      setFgyt1('Hungarian goods');
+      setFgyt2('Unpackaged Shops');
+      setFgyt3('Green downtown');
+      setFgyt4('Transport');
+      setFgys1('The city of Győr has a separate agreement with the multinational stores operating within the city limits, in which it is stipulated that they should strive to distribute Hungarian goods, such as vegetables, fruits, especially Hungarian oranges, clothing and other products. Thus, the shelves of the stores will not be the vegetables and fruits picked in the green, picked in the truck, and the mass products produced in other parts of the world, but the preparations made by Hungarian workers, which will strengthen the country\'s industry.');
+      setFgys2('In the city, bulk goods are only available in stores where we can fill the desired item into our own containers and get the price projected on the quantity, so you only have to pay for the product, not the packaging, so the price per unit can be cheaper. In addition, city residents do not burden their environment with extra packaging.');
+      setFgys3('In the recent period, the developments have made it possible for the city center to become more and more green, with a well-developed, unified cycle path network in addition to the trees and park areas.');
+      setFgys4('Thanks to technical innovations, we were able to drive city traffic underground in a 2x2 lane, with a separate rescue lane in case there was a problem under the city. In the city, only the services of the Volánbusz and the vehicles of public bodies can travel, and with the alternative means of transport, such as bicycles, scooters, Segways, anyone can use the city\'s cycle path network. This is encouraged by the network of thousands of parking garages built on the outskirts of the city, for which a city pass can be purchased.');
+
     }
     else if(n===3) {
       setSz1('Das ist der PR-Artikel, sehr schön und schlau');
       setSz2('Das ist ein anderer Text');
       setTt1('Artikel PR');
       setTt2('Eine andere Aufgabe');
+      setFgyt1('Ungarischer Ware');
+      setFgyt2('Unverpackte Geschäfte');
+      setFgyt3('Grüne Innenstadt');
+      setFgyt4('Transport');
+      setFgys1('Die Stadt Győr hat einen separaten Vertrag mit multinationalen Geschäften, die innerhalb der Stadtgrenzen tätig sind, in denen festgelegt ist, dass sie sich bemühen sollen, ungarische Waren wie Gemüse, Obst, insbesondere ungarische Orangen, Kleidung und andere Produkte zu vertreiben. So werden die Regale der Läden nicht das im Grünen gepflückte Gemüse und Obst sein, das im Lastwagen gepflückt wird, und die Massenprodukte, die in anderen Teilen der Welt hergestellt werden, sondern die Vorbereitungen der ungarischen Arbeiter, die die Industrie des Landes stärken werden .');
+      setFgys2('In der Stadt gibt es Schüttgut nur in Geschäften, in denen wir den gewünschten Artikel in unsere eigenen Behälter abfüllen können und den Preis auf die Menge hochgerechnet bekommen, also zahlen Sie nur das Produkt, nicht die Verpackung, also den Stückpreis kann billiger sein. Zudem belasten Stadtbewohner ihre Umwelt nicht mit zusätzlichem Verpackungsmaterial.');
+      setFgys3('Die Entwicklungen haben es in der jüngeren Vergangenheit ermöglicht, dass die Innenstadt immer grüner wird, mit einem gut ausgebauten, einheitlichen Radwegenetz neben den Bäumen und Parkflächen.');
+      setFgys4('Dank technischer Innovationen konnten wir den Stadtverkehr 2x2-spurig unterirdisch fahren, mit separatem Rettungsstreifen für den Fall, dass es unter der Stadt zu Problemen kam. In der Stadt können nur die Dienste des Volánbusz und die Fahrzeuge öffentlicher Einrichtungen fahren, und mit den alternativen Verkehrsmitteln wie Fahrrädern, Rollern, Segways kann jeder das Radwegenetz der Stadt nutzen. Dies wird durch das am Stadtrand errichtete Netz von Tausenden von Parkhäusern gefördert, für die ein City Pass erworben werden kann.');
+
+
     }
     else if(n===4) {
       setSz1('Ceci est l\'article de relations publiques, très gentil et intelligent');
       setSz2('Ceci est un autre texte');
       setTt1('Article PR');
       setTt2('Une autre tâche');
+      setFgyt1('Produit hongrois');
+      setFgyt2('Magasins sans emballage');
+      setFgyt3('Centre-ville vert');
+      setFgyt4('Transport');
+      setFgys1('La ville de Győr a un contrat séparé avec des magasins multinationaux opérant dans les limites de la ville, dans lequel elle stipule qu\'ils doivent s\'efforcer de distribuer des produits hongrois, tels que des légumes, des fruits, en particulier des oranges, des vêtements et d\'autres produits hongrois. Ainsi, les rayons des magasins ne seront pas les légumes et fruits cueillis en vert, cueillis dans le camion, et les produits de masse fabriqués dans d\'autres parties du monde, mais les préparations faites par les ouvriers hongrois, qui renforceront l\'industrie du pays .');
+      setFgys2('En ville, les marchandises en vrac ne sont disponibles que dans les magasins où nous pouvons remplir l\'article souhaité dans nos propres conteneurs et obtenir le prix projeté sur la quantité, vous n\'avez donc à payer que le produit, pas l\'emballage, donc le prix unitaire peut être moins cher. De plus, les habitants de la ville ne surchargent pas leur environnement avec des matériaux d\'emballage supplémentaires.');
+      setFgys3('Dans la période récente, les aménagements ont permis au centre-ville de devenir de plus en plus vert, avec un réseau de pistes cyclables bien développé et unifié en plus des arbres et des espaces verts.');
+      setFgys4('Grâce aux innovations techniques, nous avons pu conduire le trafic urbain sous terre sur une voie 2x2, avec une voie de secours séparée en cas de problème sous la ville. Dans la ville, seuls les services du Volánbusz et les véhicules des organismes publics peuvent circuler, et avec les moyens de transport alternatifs, tels que les vélos, les scooters, les Segway, tout le monde peut utiliser le réseau de pistes cyclables de la ville. Ceci est encouragé par le réseau de milliers de parkings construits à la périphérie de la ville, pour lesquels un city pass peut être acheté.');
+
+
     }
     else if(n===5) {
       setSz1('Hic est PR articulus, valde delicatus et dolor');
       setSz2('Hic est alius textus');
       setTt1('Articulus PR');
       setTt2('Alius negotium');
+      setFgyt1('Hungarica commodum');
+      setFgyt2('Macellum stores');
+      setFgyt3('Green media urbe');
+      setFgyt4('Transporto');
+      setFgys1('Urbs Győr separatum pactum habet cum multinationali thesauris intra fines urbis operantibus, in quo cavet ut bona Hungarica distribuere studeant, sicut vegetabilia, fructus, praesertim aurantia hungarica, vestes et alia producta. Ita cotes acervi leguminum et fructus in viridi lecta in plaustro lecta non erunt, et massa producta in aliis mundi partibus producta, sed praeparationes ab operariis Hungaricis factae, quae confirmant. patriae industriam.');
+      setFgys2('In urbe, bona mole in promptu tantum sunt, ubi desideratum item in vasculis nostris implere possumus et pretium quantitatis proiectum, sic solum fructus pro mercede, non packaging, pretium per unitatem. vilius esse potest. Praeterea incolae civitatis ambitum suum cum extra sarcinas materiae non gravant.');
+      setFgys3('Recentiore tempore, progressiones effecit ut centrum urbis magis magisque viridis fieret, cum retis bene evolutis, coniungendis cycli cycli praeter arbores et areas parcas.');
+      setFgys4('Gratias technicis innovationibus, urbem mercaturam sub terra in 2x2 lane depellere potuimus, cum venellam separatam liberandum si quaestio sub urbe erat. In urbe tantum officia Volánbusz et vehicula corporum publicorum iter facere possunt, et cum altero petendorum, ut bicycli, scooters, Segways, quis potest iter retis cycli urbis uti. Hoc confirmatur retis milia garagiorum in extrema parte urbis aedificata, pro quibus civitas transiri potest emi.');
+
+
     }
   }
   const post = [{title:tt1, szoveg:sz1, kep:testkep},{title:tt2, szoveg:sz2, kep:CGBGL},];
+  const FGY = [{title:fgyt1, szoveg:fgys1}, {title:fgyt2, szoveg:fgys2}, {title:fgyt3, szoveg:fgys3}, {title:fgyt4, szoveg:fgys4}]
   return (
     <Router>
       {/*navbar*/}
@@ -99,7 +150,7 @@ function App() {
       </div>
       {/*content*/}
       <Routes>
-        <Route exact path="/" element={<Home toggle={toggle} post={post}/>}></Route>
+        <Route exact path="/" element={<Home toggle={toggle} post={post} FGY={FGY}/>}></Route>
       </Routes>
       {/*footer*/}
       <div className="footer-cont">

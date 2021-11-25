@@ -1,15 +1,19 @@
 *{color:white;}
 html{overflow-x: hidden;}
 body{
-    background-color:#659DBD;
+    background-color:var(--c0);
     margin:0px;
 	padding: 0px;
 	overflow-x: hidden;
 }
-.color1{background-color: #8D8741;}
-.color2{background-color: #DAAD86;}
-.color3{background-color: #BC986A;}
-.color4{background-color: #FBEEC1;}
+
+:root{
+	--c0:#659DBD;
+	--c1:#8D8741;
+	--c2:#DAAD86;
+	--c3:#BC986A;
+	--c4:#FBEEC1;
+}
 
 
 a:any-link {
@@ -23,7 +27,7 @@ a:any-link {
 	}
 
 ::-webkit-scrollbar-thumb{
-	background: -webkit-gradient(linear, left top, left bottom, from(#FBEEC1),to(#BC986A));
+	background: -webkit-gradient(linear, left top, left bottom, from(var(--c4)),to(var(--c3)));
 	box-shadow: inset 2px 2px 2px rgba (255,255,255,0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
 	}
 
