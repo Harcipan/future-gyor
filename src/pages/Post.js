@@ -4,6 +4,7 @@ import '../styles/future_gyor_style.css'
 
 function Post(props) {
   return (
+    <a href={props.link}>
     <div className="post future-gyor-img">
         <div className="post-cont">
             <div className="post-title">{props.title}</div>
@@ -12,7 +13,7 @@ function Post(props) {
         <div className="post-cont">
             <div><img src={props.kep} alt="testkep" className="post-image"/></div>
         </div>
-    </div>
+    </div></a>
   );
 }
 

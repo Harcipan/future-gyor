@@ -23,7 +23,7 @@ function Home(props) {
       <div className="cím"></div>
       <div className="postok">
         {props.post.map((post)=>(
-          <Post key={post.title.toString()} title={post.title} szoveg={post.szoveg} kep={post.kep}/>))}
+          <Post key={post.title.toString()} title={post.title} szoveg={post.szoveg} kep={post.kep} link={post.link}/>))}
       </div>
 
       <div className="cím">Győr 2121</div>

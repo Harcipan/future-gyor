@@ -6,14 +6,16 @@ import './styles/footer_style.css'
 import Home from './pages/Home'
 import CGBGL from './images/CzuczorLogo.png'
 import testkep from './images/CzuczorLogoOG.png'
+import Latvanyossagok from './pages/Latvanoyssagok';
+import PrCikk from './pages/Prcikk';
 
 function App() {
   const [toggle,setToggle]=useState(false);
   const toggler = ()=>{toggle?setToggle(false):setToggle(true);}
-  const [sz1, setSz1]=useState("Ez van a pr cikkben, nagyon szép és okos")
-  const [sz2, setSz2]=useState("Ez egy másik szöveg")
+  const [sz1, setSz1]=useState("Ezért érdemes Győrbe látogatni 2121-ben!")
+  const [sz2, setSz2]=useState("Ezeket mindenképpen nézd meg a jövőbeli Győrben!")
   const [tt1, setTt1]=useState("PR Cikk")
-  const [tt2, setTt2]=useState("Egy másik feladat")
+  const [tt2, setTt2]=useState("Látványosságok")
 
   const [fgyt1, setFgyt1]=useState("Magyar árú")
   const [fgyt2, setFgyt2]=useState("Kimérős boltok")
@@ -97,7 +99,7 @@ function App() {
 
     }
   }
-  const post = [{title:tt1, szoveg:sz1, kep:testkep},{title:tt2, szoveg:sz2, kep:CGBGL},];
+  const post = [{title:tt1, szoveg:sz1, kep:testkep, link:"/pr_cikk"},{title:tt2, szoveg:sz2, kep:CGBGL, link:"/latvanyossagok"},];
   const FGY = [{title:fgyt1, szoveg:fgys1}, {title:fgyt2, szoveg:fgys2}, {title:fgyt3, szoveg:fgys3}, {title:fgyt4, szoveg:fgys4}]
   return (
     <Router>
@@ -121,7 +123,7 @@ function App() {
       </div>
       <div className="navbar-cont-mobile">
         <div className="navbar-item n-i-s fdr">
-            <a className="nav-link" href="https://playforwin.hu"><img src={CGBGL} alt="CGBG Logo" style={{width:"50px"}}/></a>
+            <a className="nav-link" href="/"><img src={CGBGL} alt="CGBG Logo" style={{width:"50px"}}/></a>
         </div>
         <div onClick={toggler} className="navbar-item n-i-e fdr">
             <div className="line-container">
@@ -151,6 +153,8 @@ function App() {
       {/*content*/}
       <Routes>
         <Route exact path="/" element={<Home toggle={toggle} post={post} FGY={FGY}/>}></Route>
+        <Route path="/pr_cikk" element={<PrCikk/>}></Route>
+        <Route path="/latvanyossagok" element={<Latvanyossagok/>}></Route>
       </Routes>
       {/*footer*/}
       <div className="footer-cont">
