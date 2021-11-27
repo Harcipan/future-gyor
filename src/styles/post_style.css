@@ -42,3 +42,16 @@ img{
     font-weight: bold;
     font-size: clamp(2rem, 6vw, 3rem);
 }
+
+.prcikk{
+    padding:50px;
+}
+
+@media screen and (max-width: 600px){
+    .prcikk{
+        padding: 0px;
+    }
+	.prcikk-img{
+        width: 250px;
+    }
+}

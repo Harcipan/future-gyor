@@ -10,7 +10,7 @@ function Prcikk(props) {
       <div className="future-gyor-item">
       <div className="future-gyor-title">{props.prcikk[0].title}</div>
       <div className="future-gyor-text">{props.prcikk[0].text}</div>
-      <div style={{textAlign:"center", padding:"50px"}}><img style={{borderRadius:"20px"}}src={img29} alt="future-gyor" /></div>
+      <div className="prcikk" style={{textAlign:"center",}}><img className="prcikk-img" style={{borderRadius:"20px"}}src={img29} alt="future-gyor" /></div>
       </div>
     </div>
     </>
