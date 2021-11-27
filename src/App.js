@@ -99,7 +99,7 @@ function App() {
 
     }
   }
-  const post = [{title:tt1, szoveg:sz1, kep:testkep, link:"/pr_cikk"},{title:tt2, szoveg:sz2, kep:CGBGL, link:"/latvanyossagok"},];
+  const post = [{title:tt1, szoveg:sz1, kep:testkep, link:"pages/prcikk"},{title:tt2, szoveg:sz2, kep:CGBGL, link:"pages/latvanyossagok"},];
   const FGY = [{title:fgyt1, szoveg:fgys1}, {title:fgyt2, szoveg:fgys2}, {title:fgyt3, szoveg:fgys3}, {title:fgyt4, szoveg:fgys4}]
   return (
     <Router>
@@ -153,8 +153,8 @@ function App() {
       {/*content*/}
       <Routes>
         <Route exact path="/" element={<Home toggle={toggle} post={post} FGY={FGY}/>}></Route>
-        <Route path="/pr_cikk" element={<PrCikk/>}></Route>
-        <Route path="/latvanyossagok" element={<Latvanyossagok/>}></Route>
+        <Route path="/pages/prcikk" element={<PrCikk/>}></Route>
+        <Route path="/pages/latvanyossagok" element={<Latvanyossagok/>}></Route>
       </Routes>
       {/*footer*/}
       <div className="footer-cont">
