@@ -88,9 +88,8 @@ function Latvanyossagok(props) {
             <div className="future-gyor-title">Szent László Látogatóközpont</div>
             <div className="future-gyor-text">A Szent László Látogatóközpont foglalja magába Püspökvár-Toronykilátó és a Boldog Apor Vilmos Emlékkiállítást, a LEGENDA AUREA - Ereklyék vonzásában c. állandó kiállítást és az Egyházmegyei Könyvtárat és Kiállítótermet is.</div>
         </div>
-        <div><img src={img22} alt="future-gyor" className="future-gyor-img"/></div>
-        <div><img src={img27} alt="future-gyor" className="future-gyor-img"/></div>
-        <div><img src={img25} alt="future-gyor" className="future-gyor-img"/></div>
+        
+        <div><img src={img28} alt="future-gyor" className="future-gyor-img"/></div>
     </div>
     <div className="future-gyor-cont">
         <div className="future-gyor-item">
@@ -98,7 +97,6 @@ function Latvanyossagok(props) {
             <div className="future-gyor-text">Az államalapítás korában épült vár ma is a győri püspökség székhelye. A főpapi rezidencia mai arculata gróf Zichy Ferenc püspök (1743-1783) nevéhez kötődik. A csonka tornyban a püspökvár építésének történetét, a győri püspökök portréit és címereit láthatjuk. A legfelső szinten Győr városképe tárul elénk a 19. század végén és az 1960-as években készült felvételeken. A kilátóba feljutva megcsodálhatjuk a város egyedülálló panorámáját.</div>
         </div>
         <div><img src={img32} alt="future-gyor" className="future-gyor-img"/></div>
-        <div><img src={img28} alt="future-gyor" className="future-gyor-img"/></div>
     </div>
     <div className="future-gyor-cont">
         <div className="future-gyor-item">

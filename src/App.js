@@ -5,9 +5,10 @@ import './styles/navbar.css'
 import './styles/footer_style.css'
 import Home from './pages/Home'
 import CGBGL from './images/CzuczorLogo.png'
-import testkep from './images/CzuczorLogoOG.png'
 import Latvanyossagok from './pages/Latvanoyssagok';
 import PrCikk from './pages/Prcikk';
+import img18 from './images/latvanoyssagok/image18.jpg'
+import img19 from './images/latvanoyssagok/image19.jpg'
 
 function App() {
   const [toggle,setToggle]=useState(false);
@@ -99,7 +100,7 @@ function App() {
 
     }
   }
-  const post = [{title:tt1, szoveg:sz1, kep:testkep, link:"/pr_cikk"},{title:tt2, szoveg:sz2, kep:CGBGL, link:"/latvanyossagok"},];
+  const post = [{title:tt1, szoveg:sz1, kep:img19, link:"/pr_cikk"},{title:tt2, szoveg:sz2, kep:img18, link:"/latvanyossagok"},];
   const FGY = [{title:fgyt1, szoveg:fgys1}, {title:fgyt2, szoveg:fgys2}, {title:fgyt3, szoveg:fgys3}, {title:fgyt4, szoveg:fgys4}]
   return (
     <Router>
